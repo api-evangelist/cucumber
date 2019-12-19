@@ -1,0 +1,61 @@
+{
+    "name": "Cucumber",
+    "description": "Simple, human collaboration. Tweets from the Cucumber team.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18742-cucumber.jpg",
+    "tags": [
+        "api service provider",
+        "have api",
+        "testing"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/cucumber\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Cucumber",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18742-cucumber.jpg",
+            "humanURL": "https:\/\/cucumber.io\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/cucumber-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/cucumber-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/cucumber.io\/blog"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/cucumber.io\/feed.xml"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/cucumber-tony-limited"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/cucumber"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/cucumberbdd"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/cucumber.io\/"
+        }
+    ]
+}
