@@ -1,9 +1,11 @@
+aid: cucumber
 name: Cucumber
 description: Cucumber is a tool for running automated tests written in plain language. It supports Behavior Driven Development (BDD) and allows collaboration between technical and non-technical team members.
-image: https://cucumber.io/images/cucumber-logo.svg
-url: https://cucumber.io
-created: '2024'
-modified: '2024'
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/cucumber/refs/heads/main/apis.yml
+created: '2024-01-01'
+modified: '2026-03-16'
 apis:
 - name: Cucumber Open Source
   description: Open source BDD automation tool that supports multiple programming languages including Ruby, Java, JavaScript, and more.
@@ -95,9 +97,8 @@ common:
 - type: YouTube
   url: https://www.youtube.com/channel/UCVhQ7ulinkFAkUx3eNvzoEg
 maintainers:
-- name: Cucumber Team
-  email: cukes@googlegroups.com
-  url: https://cucumber.io/community
+  - FN: Kin Lane
+    email: kin@apievangelist.com
 tags:
 - BDD
 - Testing
