@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "cuc": "https://cucumber.io/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Feature": "cuc:Feature",
+    "Scenario": "cuc:Scenario",
+    "ScenarioOutline": "cuc:ScenarioOutline",
+    "Step": "cuc:Step",
+    "StepDefinition": "cuc:StepDefinition",
+    "Pickle": "cuc:Pickle",
+    "TestRun": "cuc:TestRun",
+    "TestCase": "cuc:TestCase",
+    "TestStep": "cuc:TestStep",
+    "TestStepResult": "cuc:TestStepResult",
+    "Attachment": "cuc:Attachment",
+    "Tag": "cuc:Tag",
+    "name": "schema:name",
+    "description": "schema:description",
+    "keyword": "cuc:keyword",
+    "language": "schema:inLanguage",
+    "uri": {"@id": "schema:url", "@type": "xsd:anyURI"},
+    "tags": "cuc:hasTag",
+    "steps": "cuc:hasStep",
+    "status": "cuc:resultStatus",
+    "duration": "cuc:duration",
+    "message": "schema:text",
+    "timestamp": {"@id": "schema:dateRecorded", "@type": "xsd:dateTime"},
+    "implementation": "cuc:implementation",
+    "runtime": "cuc:runtime"
+  }
+}

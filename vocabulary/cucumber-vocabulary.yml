@@ -1,0 +1,38 @@
+name: Cucumber Vocabulary
+description: >-
+  Controlled terms used across Cucumber Behavior Driven Development tooling
+  including Gherkin syntax, the Cucumber Messages protocol, step definitions,
+  hooks, and result reporting.
+terms:
+  - term: BDD
+    definition: Behavior Driven Development - collaborative practice using executable specifications written in plain language.
+  - term: Gherkin
+    definition: Cucumber's domain-specific language for writing executable specifications using Given/When/Then.
+  - term: Feature
+    definition: A single Gherkin file describing a feature of the system under test.
+  - term: Scenario
+    definition: A concrete example of a feature's behavior, expressed as a sequence of steps.
+  - term: ScenarioOutline
+    definition: A parameterized scenario expanded with rows from an Examples table.
+  - term: Step
+    definition: A single Given/When/Then/And/But line in a Gherkin scenario.
+  - term: StepDefinition
+    definition: Code that matches a Gherkin step pattern and executes the step against the system.
+  - term: CucumberExpression
+    definition: Cucumber's variable-aware step pattern grammar, an alternative to regular expressions.
+  - term: Hook
+    definition: Code that runs before/after scenarios or steps to set up or tear down state.
+  - term: Tag
+    definition: A label like @smoke applied to features or scenarios for selection and configuration.
+  - term: Pickle
+    definition: An executable representation of a scenario after Gherkin parsing and outline expansion.
+  - term: TestRun
+    definition: A single execution of zero or more pickles by a Cucumber implementation.
+  - term: TestCase
+    definition: One pickle's execution within a test run.
+  - term: TestStepResult
+    definition: Outcome of a step including status (PASSED, FAILED, SKIPPED, PENDING, UNDEFINED, AMBIGUOUS).
+  - term: Attachment
+    definition: Binary or text artifact (e.g. screenshot, log) attached to a step or test case.
+  - term: Formatter
+    definition: A pluggable consumer of Cucumber Messages that produces reports (HTML, JSON, JUnit, pretty).

@@ -1,99 +1,73 @@
 # Cucumber (cucumber)
-Cucumber is a tool for running automated tests written in plain language. It supports Behavior Driven Development (BDD) and allows collaboration between technical and non-technical team members.
 
-**URL:** [Visit APIs.json URL](https://cucumber.io)
+Cucumber is an open-source Behavior Driven Development (BDD) tool for running automated tests written in plain language using the Gherkin syntax. It enables collaboration between technical and non-technical team members by expressing executable specifications as Given/When/Then scenarios. Cucumber has implementations for many languages (JVM, JavaScript, Ruby, .NET, Python, Go, Rust) and a shared message protocol that connects parsers, runners, and reporters.
 
-## Tags:
+**APIs.yml URL:** https://raw.githubusercontent.com/api-evangelist/cucumber/refs/heads/main/apis.yml
 
- - BDD, Testing, Automation, Behavior Driven Development, Gherkin, Quality Assurance, Test Framework
+## Scope
 
-## Timestamps
+- **Type:** Index
+- **x-type:** opensource
 
-- **Created:** 2024 
-- **Modified:** 2024 
+## Tags
 
-## APIs
+Automation, BDD, Behavior Driven Development, Gherkin, Open Source, Quality Assurance, Test Framework, Testing
 
-### Cucumber Open Source
-Open source BDD automation tool that supports multiple programming languages including Ruby, Java, JavaScript, and more.
-
-**Human URL:** [https://cucumber.io/docs/cucumber/](https://cucumber.io/docs/cucumber/)
-
-
-#### Tags:
-
- - BDD, Testing, Automation, Open Source
-
-#### Properties
-
-- [Documentation](https://cucumber.io/docs/cucumber/)
-- [GitHub Organization](https://github.com/cucumber)
-- [Installation Guide](https://cucumber.io/docs/installation/)
-- [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/)
-- [Community](https://cucumber.io/docs/community/)
-- [Blog](https://cucumber.io/blog)
-
-### Cucumber.js
-JavaScript/Node.js implementation of Cucumber for running BDD tests.
-
-**Human URL:** [https://github.com/cucumber/cucumber-js](https://github.com/cucumber/cucumber-js)
-
-
-#### Tags:
-
- - JavaScript, Node.js, BDD, Testing
-
-#### Properties
-
-- [GitHub Repository](https://github.com/cucumber/cucumber-js)
-- [Documentation](https://github.com/cucumber/cucumber-js/blob/main/docs/)
-- [NPM Package](https://www.npmjs.com/package/@cucumber/cucumber)
-
-### Cucumber Ruby
-Ruby implementation of Cucumber for BDD testing.
-
-**Human URL:** [https://github.com/cucumber/cucumber-ruby](https://github.com/cucumber/cucumber-ruby)
-
-
-#### Tags:
-
- - Ruby, BDD, Testing
-
-#### Properties
-
-- [GitHub Repository](https://github.com/cucumber/cucumber-ruby)
-- [Documentation](https://cucumber.io/docs/cucumber/)
-- [RubyGems](https://rubygems.org/gems/cucumber)
+## Implementations
 
 ### Cucumber JVM
-Java/JVM implementation of Cucumber supporting Java, Kotlin, Scala, and other JVM languages.
+Java/JVM implementation distributed via Maven Central (io.cucumber).
+- https://github.com/cucumber/cucumber-jvm
 
-**Human URL:** [https://github.com/cucumber/cucumber-jvm](https://github.com/cucumber/cucumber-jvm)
+### Cucumber.js
+JavaScript/Node.js implementation distributed as @cucumber/cucumber on npm.
+- https://github.com/cucumber/cucumber-js
 
+### Cucumber Ruby
+The original Ruby implementation, distributed as the cucumber gem.
+- https://github.com/cucumber/cucumber-ruby
 
-#### Tags:
+### Gherkin
+The DSL parsers powering all Cucumber implementations.
+- https://github.com/cucumber/gherkin
 
- - Java, JVM, Kotlin, Scala, BDD, Testing
+### Cucumber Messages
+The protocol for messages exchanged between parsers, runners, and formatters.
+- https://github.com/cucumber/messages
 
-#### Properties
+## Features
 
-- [GitHub Repository](https://github.com/cucumber/cucumber-jvm)
-- [Documentation](https://cucumber.io/docs/cucumber/)
-- [Maven Central](https://search.maven.org/search?q=g:io.cucumber)
+- Plain-language specifications via Gherkin
+- Implementations for JVM, JavaScript, Ruby, .NET, Python, Go, and Rust
+- Step definitions with Cucumber Expressions or regex
+- Hooks and tag-driven configuration
+- Cucumber Messages protocol shared across implementations
+- Pluggable formatters (pretty, JSON, JUnit, HTML)
+- Parallel scenario execution
+- CI integration through JUnit/HTML reporting
 
-## Common Properties
+## Use Cases
 
-- [Website](https://cucumber.io)
-- [Documentation](https://cucumber.io/docs)
-- [School](https://school.cucumber.io)
-- [Tools](https://cucumber.io/tools)
-- [GitHub](https://github.com/cucumber)
-- [Twitter](https://twitter.com/cucumberbdd)
-- [Slack](https://cucumber.io/community#slack)
-- [YouTube](https://www.youtube.com/channel/UCVhQ7ulinkFAkUx3eNvzoEg)
+- Acceptance testing in cross-functional teams
+- Living documentation of system behavior
+- API contract testing in BDD style
+- Tagged regression suites for CI
+- Cross-team communication and shared specifications
+
+## Artifacts
+
+- JSON Schema (Cucumber Messages): [json-schema/cucumber-message-schema.json](json-schema/cucumber-message-schema.json)
+- JSON-LD Context: [json-ld/cucumber-context.jsonld](json-ld/cucumber-context.jsonld)
+- Vocabulary: [vocabulary/cucumber-vocabulary.yml](vocabulary/cucumber-vocabulary.yml)
+
+## Resources
+
+- Website: https://cucumber.io
+- Documentation: https://cucumber.io/docs
+- Gherkin Reference: https://cucumber.io/docs/gherkin/reference/
+- Cucumber School: https://school.cucumber.io
+- GitHub: https://github.com/cucumber
 
 ## Maintainers
 
-**FN:** Cucumber Team
-
-**Email:** cukes@googlegroups.com
+- Kin Lane (kin@apievangelist.com)

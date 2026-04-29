@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/cucumber/refs/heads/main/json-schema/cucumber-message-schema.json",
+  "title": "CucumberMessage",
+  "description": "Subset schema for Cucumber Messages, the standard interchange format emitted by Cucumber implementations and consumed by formatters and reporters. See https://github.com/cucumber/messages for the canonical schema.",
+  "type": "object",
+  "oneOf": [
+    {"required": ["meta"]},
+    {"required": ["source"]},
+    {"required": ["gherkinDocument"]},
+    {"required": ["pickle"]},
+    {"required": ["testCaseStarted"]},
+    {"required": ["testCaseFinished"]},
+    {"required": ["testStepStarted"]},
+    {"required": ["testStepFinished"]},
+    {"required": ["testRunStarted"]},
+    {"required": ["testRunFinished"]},
+    {"required": ["attachment"]}
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "protocolVersion": {"type": "string"},
+        "implementation": {"type": "object", "properties": {"name": {"type": "string"}, "version": {"type": "string"}}},
+        "runtime": {"type": "object", "properties": {"name": {"type": "string"}, "version": {"type": "string"}}}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["uri", "data", "mediaType"],
+      "properties": {
+        "uri": {"type": "string"},
+        "data": {"type": "string"},
+        "mediaType": {"type": "string"}
+      }
+    },
+    "gherkinDocument": {
+      "type": "object",
+      "properties": {
+        "uri": {"type": "string"},
+        "feature": {"$ref": "#/$defs/Feature"},
+        "comments": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "pickle": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "uri": {"type": "string"},
+        "name": {"type": "string"},
+        "language": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}}}},
+        "steps": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "testRunStarted": {"type": "object", "properties": {"timestamp": {"$ref": "#/$defs/Timestamp"}}},
+    "testRunFinished": {
+      "type": "object",
+      "properties": {
+        "success": {"type": "boolean"},
+        "timestamp": {"$ref": "#/$defs/Timestamp"},
+        "message": {"type": "string"}
+      }
+    },
+    "testCaseStarted": {"type": "object"},
+    "testCaseFinished": {"type": "object"},
+    "testStepStarted": {"type": "object"},
+    "testStepFinished": {
+      "type": "object",
+      "properties": {
+        "testStepResult": {
+          "type": "object",
+          "properties": {
+            "status": {"type": "string", "enum": ["UNKNOWN", "PASSED", "SKIPPED", "PENDING", "UNDEFINED", "AMBIGUOUS", "FAILED"]},
+            "duration": {"type": "object"},
+            "message": {"type": "string"}
+          }
+        }
+      }
+    },
+    "attachment": {
+      "type": "object",
+      "properties": {
+        "body": {"type": "string"},
+        "contentEncoding": {"type": "string", "enum": ["IDENTITY", "BASE64"]},
+        "mediaType": {"type": "string"},
+        "fileName": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "Timestamp": {
+      "type": "object",
+      "properties": {
+        "seconds": {"type": "integer"},
+        "nanos": {"type": "integer"}
+      }
+    },
+    "Feature": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "description": {"type": "string"},
+        "language": {"type": "string"},
+        "keyword": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "object"}},
+        "children": {"type": "array", "items": {"type": "object"}}
+      }
+    }
+  }
+}
