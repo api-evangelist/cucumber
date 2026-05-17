@@ -1,6 +1,6 @@
 aid: cucumber
 url: https://raw.githubusercontent.com/api-evangelist/cucumber/refs/heads/main/apis.yml
-x-type: opensource
+kind: opensource
 name: Cucumber
 description: >-
   Cucumber is an open-source Behavior Driven Development (BDD) tool for running
