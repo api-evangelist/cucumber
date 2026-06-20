@@ -10,7 +10,7 @@ description: >-
   has implementations for many languages (JVM, JavaScript, Ruby, .NET, Python,
   Go, Rust) and a shared message protocol that connects parsers, runners, and
   reporters.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Automation
   - BDD
