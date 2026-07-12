@@ -145,6 +145,8 @@ useCases:
   - name: Cross-Team Communication
     description: Bridges product, QA, and engineering with a shared specification language.
 common:
+  - type: DomainSecurity
+    url: security/cucumber-domain-security.yml
   - type: Website
     url: https://cucumber.io
   - type: Documentation
@@ -169,6 +171,8 @@ common:
     url: json-ld/cucumber-context.jsonld
   - type: Vocabulary
     url: vocabulary/cucumber-vocabulary.yml
+  - type: Blog
+    url: https://cucumber.io/blog/atom.xml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
