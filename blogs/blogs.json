@@ -1,0 +1,13 @@
+{
+  "repo": "cucumber",
+  "feeds": [
+    {
+      "source": "https://cucumber.io/blog/atom.xml",
+      "feed_url": "https://cucumber.io/blog/atom.xml",
+      "title": "Cucumber Blog",
+      "saved": 0
+    }
+  ],
+  "fetched": "2026-07-11T11:43:46Z",
+  "post_count": 20
+}
