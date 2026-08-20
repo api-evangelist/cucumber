@@ -26,6 +26,15 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cucumber.p
 tags:
   - Automation
   - BDD
+  - Behavior-Driven Development
+  - Gherkin
+  - Open-Source
+  - Quality Assurance
+  - Test Framework
+  - Testing
+tags_raw:
+  - Automation
+  - BDD
   - Behavior Driven Development
   - Gherkin
   - Open Source
@@ -120,6 +129,10 @@ apis:
       across all language ports for consistent reporting.
     humanURL: https://github.com/cucumber/messages
     tags:
+      - Protocol
+      - JSON-Schema
+      - Message
+    tags_raw:
       - Protocol
       - JSON Schema
       - Messages
