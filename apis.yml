@@ -10,6 +10,18 @@ description: >-
   has implementations for many languages (JVM, JavaScript, Ruby, .NET, Python,
   Go, Rust) and a shared message protocol that connects parsers, runners, and
   reporters.
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
