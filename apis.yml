@@ -35,12 +35,15 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cucumber.png
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-24
 tags:
   - Automation
   - BDD
   - Behavior-Driven Development
   - Gherkin
-  - Open-Source
+  - Open Source
   - Quality Assurance
   - Test Framework
   - Testing
@@ -53,6 +56,7 @@ tags_raw:
   - Quality Assurance
   - Test Framework
   - Testing
+  - Open-Source
 type: Index
 specificationVersion: '0.23'
 created: '2024-01-01'
@@ -142,12 +146,13 @@ apis:
     humanURL: https://github.com/cucumber/messages
     tags:
       - Protocol
-      - JSON-Schema
+      - JSON Schema
       - Message
     tags_raw:
       - Protocol
       - JSON Schema
       - Messages
+      - JSON-Schema
     properties:
       - type: GitHubRepository
         url: https://github.com/cucumber/messages
