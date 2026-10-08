@@ -187,6 +187,12 @@ useCases:
   - name: Cross-Team Communication
     description: Bridges product, QA, and engineering with a shared specification language.
 common:
+  - type: Plans
+    url: plans/cucumber-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/cucumber-rate-limits.yml
+  - type: FinOps
+    url: finops/cucumber-finops.yml
   - url: https://cucumber.io/blog/rss.xml
     type: BlogRSS
   - type: IssueTracker
