@@ -2,15 +2,21 @@
   "repo": "cucumber",
   "feeds": [
     {
+      "source": "https://cucumber.io/blog/rss.xml",
+      "feed_url": "https://cucumber.io/blog/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://cucumber.io/blog/atom.xml",
       "feed_url": "https://cucumber.io/blog/atom.xml",
-      "title": "Cucumber Blog",
+      "title": "",
       "saved": 0,
-      "nature": "vendor-blog",
-      "nature_basis": "path_blog"
+      "method": "feed"
     }
   ],
-  "fetched": "2026-10-03T12:15:37Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 22,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
