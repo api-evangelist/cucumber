@@ -1,4 +1,4 @@
-# Cucumber (cucumber)
+# Cucumber
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,72 +66,130 @@
 
 Cucumber is an open-source Behavior Driven Development (BDD) tool for running automated tests written in plain language using the Gherkin syntax. It enables collaboration between technical and non-technical team members by expressing executable specifications as Given/When/Then scenarios. Cucumber has implementations for many languages (JVM, JavaScript, Ruby, .NET, Python, Go, Rust) and a shared message protocol that connects parsers, runners, and reporters.
 
-**APIs.yml URL:** https://raw.githubusercontent.com/api-evangelist/cucumber/refs/heads/main/apis.yml
+**Areas:** Automation · BDD · Behavior-Driven Development · Gherkin · Open Source · Quality Assurance · Test Framework · Testing
 
-## Scope
+## Cucumber on APIs.io
 
-- **Type:** Index
-- **x-type:** opensource
+Everything profiled for Cucumber is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cucumber/](https://apis.io/providers/cucumber/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-Automation, BDD, Behavior Driven Development, Gherkin, Open Source, Quality Assurance, Test Framework, Testing
+- [Cucumber JVM](https://apis.io/apis/cucumber/cucumber-jvm/) — Java/JVM implementation of Cucumber supporting Java, Kotlin, Scala, and other JVM languages. Distributed via Maven Central under the io.cucumber group.
+- [Cucumber.js](https://apis.io/apis/cucumber/cucumber-js/) — JavaScript/Node.js implementation of Cucumber for running BDD tests in Node and the browser. Distributed as @cucumber/cucumber on npm.
+- [Cucumber Ruby](https://apis.io/apis/cucumber/cucumber-ruby/) — Ruby implementation of Cucumber, the original Cucumber project. Distributed as the cucumber gem on RubyGems.
+- [Gherkin](https://apis.io/apis/cucumber/gherkin/) — Gherkin is the language used to write Cucumber feature files. Parsers are published per language and emit Cucumber Messages that downstream tools consume.
+- [Cucumber Messages](https://apis.io/apis/cucumber/cucumber-messages/) — Protocol-buffer / JSON Schema specification of the messages exchanged between Cucumber components (parsers, runners, formatters). Implemented across all…
 
-## Implementations
+### Published properties
 
-### Cucumber JVM
-Java/JVM implementation distributed via Maven Central (io.cucumber).
-- https://github.com/cucumber/cucumber-jvm
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Cucumber.js
-JavaScript/Node.js implementation distributed as @cucumber/cucumber on npm.
-- https://github.com/cucumber/cucumber-js
+#### JSON Schema (1)
 
-### Cucumber Ruby
-The original Ruby implementation, distributed as the cucumber gem.
-- https://github.com/cucumber/cucumber-ruby
+The data models the API reads and writes.
 
-### Gherkin
-The DSL parsers powering all Cucumber implementations.
-- https://github.com/cucumber/gherkin
+- [CucumberMessage](https://apis.io/schemas/cucumber/cucumber-message/)
 
-### Cucumber Messages
-The protocol for messages exchanged between parsers, runners, and formatters.
-- https://github.com/cucumber/messages
+#### JSON-LD (1)
 
-## Features
+Linked-data contexts for the provider's vocabulary.
 
-- Plain-language specifications via Gherkin
-- Implementations for JVM, JavaScript, Ruby, .NET, Python, Go, and Rust
-- Step definitions with Cucumber Expressions or regex
-- Hooks and tag-driven configuration
-- Cucumber Messages protocol shared across implementations
-- Pluggable formatters (pretty, JSON, JUnit, HTML)
-- Parallel scenario execution
-- CI integration through JUnit/HTML reporting
+- [Cucumber Context](https://apis.io/jsonld/cucumber/cucumber-context/)
 
-## Use Cases
+#### Vocabulary (1)
 
-- Acceptance testing in cross-functional teams
-- Living documentation of system behavior
-- API contract testing in BDD style
-- Tagged regression suites for CI
-- Cross-team communication and shared specifications
+The provider's domain terms, defined.
 
-## Artifacts
+- [Cucumber Vocabulary](https://apis.io/vocabularies/cucumber/cucumber-vocabulary/)
 
-- JSON Schema (Cucumber Messages): [json-schema/cucumber-message-schema.json](json-schema/cucumber-message-schema.json)
-- JSON-LD Context: [json-ld/cucumber-context.jsonld](json-ld/cucumber-context.jsonld)
-- Vocabulary: [vocabulary/cucumber-vocabulary.yml](vocabulary/cucumber-vocabulary.yml)
+#### Governance rules (1)
 
-## Resources
+Spectral rulesets for the provider's contracts.
 
-- Website: https://cucumber.io
-- Documentation: https://cucumber.io/docs
-- Gherkin Reference: https://cucumber.io/docs/gherkin/reference/
-- Cucumber School: https://school.cucumber.io
-- GitHub: https://github.com/cucumber
+- [Cucumber — jsonschema rules](https://apis.io/rules/cucumber/cucumber-jsonschema-spectral-rules/)
 
-## Maintainers
+#### Security (1)
 
-- Kin Lane (kin@apievangelist.com)
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cucumber Domain Security](https://apis.io/security/cucumber/cucumber-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Cucumber Plans Pricing](https://apis.io/plans/cucumber/cucumber-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Cucumber Rate Limits](https://apis.io/rate-limits/cucumber/cucumber-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Cucumber Finops](https://apis.io/finops/cucumber/cucumber-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cucumber.io)
+- [Documentation](https://cucumber.io/docs)
+- [Blog](https://cucumber.io/blog/atom.xml)
+- [GitHub](https://github.com/cucumber)
+
+## API Evangelist rating
+
+**Kin Score 26.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 17.9 |
+| Contract governance | 23.5 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cucumber/](https://apis.io/providers/cucumber/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cucumber: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cucumber/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
